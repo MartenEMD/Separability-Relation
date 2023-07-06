@@ -46,7 +46,6 @@ public class SeparabilityRelation
 
     public static void Main(string[] args)
     {
-#if false
         State[] states = new State[7];
         states[0] = new State("q0", new Tuple<char, string>('a', "q2"), new Tuple<char, string>('b', "q1"));
         states[1] = new State("q1", new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q3"));
@@ -56,14 +55,7 @@ public class SeparabilityRelation
         states[5] = new State("q5", new Tuple<char, string>('a', "q2"), new Tuple<char, string>('b', "q1"));
         states[6] = new State("q6", new Tuple<char, string>('a', "q1"), new Tuple<char, string>('b', "q2"));
         Print2DArray(Minimize(new char[] { 'a', 'b'}, states));
-#elif true
-        State[] states = new State[4];
-        states[0] = new State("z0", new Tuple<char, string>('0', "z0"), new Tuple<char, string>('1', "z1"));
-        states[1] = new State("z1", true, new Tuple<char, string>('0', "z3"), new Tuple<char, string>('1', "z1"));
-        states[2] = new State("z2", new Tuple<char, string>('0', "z1"), new Tuple<char, string>('1', "z3"));
-        states[3] = new State("z3", new Tuple<char, string>('0', "z0"), new Tuple<char, string>('1', "z1"));
-        Print2DArray(Minimize(new char[] { '0', '1' }, states));
-#endif
+
         Console.Read();
     }
 
