@@ -46,14 +46,12 @@ public class SeparabilityRelation
 
     public static void Main(string[] args)
     {
-        State[] states = new State[7];
+        State[] states = new State[5];
         states[0] = new State("q0", new Tuple<char, string>('a', "q2"), new Tuple<char, string>('b', "q1"));
-        states[1] = new State("q1", new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q3"));
-        states[2] = new State("q2", new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q3"));
-        states[3] = new State("q3", new Tuple<char, string>('a', "q5"), new Tuple<char, string>('b', "q6"));
-        states[4] = new State("q4", true, new Tuple<char, string>('a', "q3"), new Tuple<char, string>('b', "q3"));
-        states[5] = new State("q5", new Tuple<char, string>('a', "q2"), new Tuple<char, string>('b', "q1"));
-        states[6] = new State("q6", new Tuple<char, string>('a', "q1"), new Tuple<char, string>('b', "q2"));
+        states[1] = new State("q1", new Tuple<char, string>('a', "q2"), new Tuple<char, string>('b', "q1"));
+        states[2] = new State("q2", new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q1"));
+        states[3] = new State("q3", new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q3"));
+        states[4] = new State("q4", true, new Tuple<char, string>('a', "q4"), new Tuple<char, string>('b', "q3"));
         Print2DArray(Minimize(new char[] { 'a', 'b'}, states));
 
         Console.Read();

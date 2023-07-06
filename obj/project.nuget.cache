@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tJmyLjHzC8RM8pNXsR2iTP4h7pccSaFbUndcugzyMMsevBuc1CYCaALAQ0xO+3SJa7NhfsQJWihD0vqBbgCzMw==",
+  "dgSpecHash": "QP15p0Kb1MaafgtuEW3+lRjOvT+P1PjFsqQ/PLp4HXLHQALyHAmT/v6JCSZ1iatuT3vTNw2ryUB5U8Cv1+kXaA==",
   "success": true,
-  "projectFilePath": "C:\\Visual_Studio_Projects\\Trennbarkeitsrelation\\Trennbarkeitsrelation.csproj",
+  "projectFilePath": "D:\\Visual_Studio_Projects\\C#\\Separability-Relation\\Trennbarkeitsrelation.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
